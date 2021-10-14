@@ -1,0 +1,592 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
+
+h1 {
+  color: black;
+  /* font-weight: 00; */
+  /* z-index: 1000; */
+  position: relative;
+  font-family: "Brush Script MT";
+  /* font-size: 50px; */
+  padding-top: 90px;
+}
+
+/* fills left margin automatically allowing responsive behavior for search bar */
+
+#container {
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+}
+
+#container div {
+  position: absolute;
+}
+
+#top {
+  border-top: 0;
+  border-radius: 0 0 30px 30px;
+  height: 200px;
+}
+
+#liquid {
+  background-color: #f2c025;
+  border: 10px solid #f2c025;
+  bottom: 0;
+  height: 270px;
+  overflow: hidden;
+  width: 2500px;
+}
+
+/* afte the liquid background has rendered display this opaque rectagle at an angle */
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -10px;
+  content: "";
+  height: 200px;
+  left: -40px;
+  position: absolute;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  width: 110px;
+}
+
+/* create small circles that will mimic bubbles//connect to webkit-keyframes animations */
+#liquid .bubble {
+  animation-name: bubble;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+/* we put the prefix of 'webkit' as a way for browser makers to add support for new CSS features before those features are fully supported in all browsers */
+/* you could delete webkit and still have the animations fully functional */
+@-webkit-keyframes bubble {
+  /* start from bottom */
+  0% {
+    bottom: 0;
+  }
+  /* after 50% of the time alloted has passed change color */
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 80px;
+  }
+  /* after 100% of time has passed */
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 160px;
+  }
+}
+/* catpture bubble divs and apply frames */
+.bubble1 {
+  left: 10px;
+  animation-delay: 1000ms;
+  animation-duration: 1000ms;
+}
+
+.bubble2 {
+  left: 50px;
+  animation-delay: 700ms;
+  animation-duration: 1100ms;
+}
+
+.bubble3 {
+  left: 100px;
+  animation-delay: 1200ms;
+  animation-duration: 1300ms;
+}
+
+.bubble4 {
+  left: 130px;
+  animation-delay: 1100ms;
+  animation-duration: 700ms;
+}
+
+.bubble5 {
+  left: 170px;
+  animation-delay: 1300ms;
+  animation-duration: 800ms;
+}
+
+/* create white circles and position across top of container to make foam */
+
+.beer-foam {
+  position: absolute;
+  bottom: 10px;
+  height: 180px;
+}
+
+.foam-1,
+.foam-2,
+.foam-3,
+.foam-4,
+.foam-5,
+.foam-6,
+.foam-7,
+.foam-8,
+.foam-9,
+.foam-10,
+.foam-11,
+.foam-12,
+.foam-13,
+.foam-14,
+.foam-15,
+.foam-16,
+.foam-17,
+.foam-18,
+.foam-19,
+.foam-20,
+.foam-21,
+.foam-22,
+.foam-23,
+.foam-24,
+.foam-25,
+.foam-26,
+.foam-27,
+.foam-28,
+.foam-29,
+.foam-30,
+.foam-31,
+.foam-32,
+.foam-33,
+.foam-34,
+.foam-35,
+.foam-36,
+.foam-37,
+.foam-38,
+.foam-39,
+.foam-40,
+.foam-41,
+.foam-42,
+.foam-43,
+.foam-44,
+.foam-45,
+.foam-46,
+.foam-47,
+.foam-48,
+.foam-49,
+.foam-50,
+.foam-51,
+.foam-52,
+.foam-53,
+.foam-54,
+.foam-55,
+.foam-56,
+.foam-57,
+.foam-58,
+.foam-59,
+.foam-60,
+.foam-61,
+.foam-62,
+.foam-63,
+.foam-64,
+.foam-65,
+.foam-66,
+.foam-67,
+.foam-68,
+.foam-67,
+.foam-68,
+.foam-69,
+.foam-70,
+.foam-71,
+.foam-72,
+.foam-73,
+.foam-74,
+.foam-75,
+.foam-76,
+.foam-77 {
+  float: left;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fefefe;
+}
+.foam-1 {
+  top: -30px;
+  left: -10px;
+}
+.foam-2 {
+  top: -35px;
+  left: 20px;
+}
+.foam-3 {
+  top: -25px;
+  left: 50px;
+}
+.foam-4 {
+  top: -35px;
+  left: 80px;
+}
+.foam-5 {
+  top: -30px;
+  left: 110px;
+}
+.foam-6 {
+  top: -20px;
+  left: 140px;
+}
+.foam-7 {
+  top: -30px;
+  left: 160px;
+}
+
+.foam-8 {
+  top: -30px;
+  left: 170px;
+}
+.foam-9 {
+  top: -35px;
+  left: 170px;
+}
+.foam-10 {
+  top: -25px;
+  left: 210px;
+}
+.foam-11 {
+  top: -35px;
+  left: 250px;
+}
+.foam-12 {
+  top: -30px;
+  left: 270px;
+}
+.foam-13 {
+  top: -20px;
+  left: 300px;
+}
+.foam-14 {
+  top: -30px;
+  left: 340px;
+}
+.foam-15 {
+  top: -30px;
+  left: 385px;
+}
+.foam-16 {
+  top: -27px;
+  left: 390px;
+}
+.foam-17 {
+  top: -40px;
+  left: 420px;
+}
+.foam-18 {
+  top: -45px;
+  left: 420px;
+}
+.foam-19 {
+  top: -35px;
+  left: 440px;
+}
+.foam-20 {
+  top: -27px;
+  left: 450px;
+}
+.foam-21 {
+  top: -35px;
+  left: 470px;
+}
+.foam-22 {
+  top: -30px;
+  left: 505px;
+}
+.foam-23 {
+  top: -40px;
+  left: 535px;
+}
+.foam-24 {
+  top: -30px;
+  left: 550px;
+}
+.foam-25 {
+  top: -35px;
+  left: 570px;
+}
+.foam-26 {
+  top: -25px;
+  left: 590px;
+}
+.foam-27 {
+  top: -35px;
+  left: 620px;
+}
+.foam-28 {
+  top: -30px;
+  left: 640px;
+}
+.foam-29 {
+  top: -30px;
+  left: 670px;
+}
+.foam-30 {
+  top: -35px;
+  left: 680px;
+}
+.foam-31 {
+  top: -35px;
+  left: 680px;
+}
+.foam-32 {
+  top: -30px;
+  left: 710px;
+}
+.foam-33 {
+  top: -20px;
+  left: 740px;
+}
+.foam-34 {
+  top: -30px;
+  left: 760px;
+}
+
+.foam-35 {
+  top: -30px;
+  left: 770px;
+}
+.foam-36 {
+  top: -35px;
+  left: 770px;
+}
+.foam-37 {
+  top: -25px;
+  left: 810px;
+}
+.foam-38 {
+  top: -35px;
+  left: 850px;
+}
+.foam-39 {
+  top: -30px;
+  left: 870px;
+}
+.foam-40 {
+  top: -20px;
+  left: 900px;
+}
+.foam-41 {
+  top: -30px;
+  left: 940px;
+}
+
+.foam-42 {
+  top: -30px;
+  left: 985px;
+}
+.foam-43 {
+  top: -30px;
+  left: -1010px;
+}
+.foam-44 {
+  top: -35px;
+  left: 1020px;
+}
+.foam-45 {
+  top: -25px;
+  left: 1050px;
+}
+.foam-46 {
+  top: -35px;
+  left: 1080px;
+}
+.foam-47 {
+  top: -30px;
+  left: 1110px;
+}
+.foam-48 {
+  top: -20px;
+  left: 1140px;
+}
+.foam-49 {
+  top: -30px;
+  left: 1160px;
+}
+
+.foam-50 {
+  top: -30px;
+  left: 1170px;
+}
+.foam-51 {
+  top: -35px;
+  left: 1170px;
+}
+.foam-52 {
+  top: -25px;
+  left: 1210px;
+}
+.foam-53 {
+  top: -35px;
+  left: 1250px;
+}
+.foam-54 {
+  top: -30px;
+  left: 1270px;
+}
+.foam-55 {
+  top: -20px;
+  left: 1300px;
+}
+.foam-56 {
+  top: -30px;
+  left: 1340px;
+}
+.foam-57 {
+  top: -30px;
+  left: 1385px;
+}
+.foam-58 {
+  top: -30px;
+  left: 1410px;
+}
+.foam-59 {
+  top: -35px;
+  left: 1420px;
+}
+.foam-60 {
+  top: -25px;
+  left: 1450px;
+}
+.foam-61 {
+  top: -35px;
+  left: 1480px;
+}
+.foam-62 {
+  top: -30px;
+  left: 1510px;
+}
+.foam-63 {
+  top: -20px;
+  left: 1540px;
+}
+.foam-64 {
+  top: -30px;
+  left: 1560px;
+}
+
+.foam-65 {
+  top: -30px;
+  left: 1570px;
+}
+.foam-66 {
+  top: -35px;
+  left: 1570px;
+}
+.foam-67 {
+  top: -25px;
+  left: 1610px;
+}
+.foam-68 {
+  top: -35px;
+  left: 1650px;
+}
+.foam-69 {
+  top: -30px;
+  left: 1670px;
+}
+.foam-70 {
+  top: -20px;
+  left: 1700px;
+}
+.foam-71 {
+  top: -30px;
+  left: 1740px;
+}
+.foam-72 {
+  top: -30px;
+  left: 1785px;
+}
+.foam-73 {
+  top: -30px;
+  left: 1810px;
+}
+.foam-74 {
+  top: -35px;
+  left: 1820px;
+}
+.foam-75 {
+  top: -25px;
+  left: 1850px;
+}
+.foam-76 {
+  top: -35px;
+  left: 1880px;
+}
+.foam-77 {
+  top: -30px;
+  left: 1910px;
+}
+
+/**********************************************/
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin: auto;
+}
+
+.map {
+  margin: auto;
+  height: 72vh;
+  width: 100%;
+  display: none;
+}
+
+.favorite-list {
+  display: none;
+  text-align: center;
+}
+
+.subtitle {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.chart {
+  text-align: center;
+  height: 72vh;
+  overflow-y: scroll;
+
+  margin-top: 10px;
+}
+
+footer {
+  height: 4vh;
+  background-color: #f2c025;
+  text-align: center;
+}
+
+main {
+  height: 72vh;
+}
+
+.fav-btn {
+  margin-left: -65px;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#city-list,
+#count,
+#title {
+  border: 1px solid black;
+}
+
+#title {
+  padding: 5px;
+  background-color: #f2c025;
+}
+#message {
+  color: green;
+}
