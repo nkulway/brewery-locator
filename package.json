@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This project has been deployed using surge at -----> http://the-tale-of-brew-cities.surge.sh/ <------",
+  "main": "script.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkulway/brewery-locator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkulway/brewery-locator/issues"
+  },
+  "homepage": "https://github.com/nkulway/brewery-locator#readme",
+  "dependencies": {
+    "@google-cloud/vision": "^4.3.2"
+  }
+}
